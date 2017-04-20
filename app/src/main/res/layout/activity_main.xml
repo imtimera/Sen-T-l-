@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="fr.compagny.sentele.MainActivity">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="80dp"
+        android:id="@+id/circle_rts"
+        android:src="@mipmap/rts1"
+        app:civ_border_color="#FF234F"
+        app:civ_border_width="2dp"
+        android:onClick="choixTv"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:text="RTS1"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/circle_rts"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/text_rts" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:onClick="choixTv"
+        android:layout_width="80dp"
+        android:id="@+id/circle_tv2"
+        android:src="@mipmap/tv2"
+        app:civ_border_color="#FF234F"
+        app:civ_border_width="2dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/circle_rts"
+        android:layout_toEndOf="@+id/circle_rts" />
+
+    <TextView
+        android:text="2sTV"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_below="@+id/circle_tv2"
+        android:layout_alignLeft="@+id/circle_tv2"
+        android:layout_alignStart="@+id/circle_tv2"
+        android:id="@+id/text_2s" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:onClick="choixTv"
+        android:layout_width="80dp"
+        android:id="@+id/circle_tfm"
+        android:src="@mipmap/tfm"
+        app:civ_border_color="#FF234F"
+        app:civ_border_width="2dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/circle_tv2"
+        android:layout_toEndOf="@+id/circle_tv2" />
+
+    <TextView
+        android:text="Tfm"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_below="@+id/circle_tfm"
+        android:layout_alignLeft="@+id/circle_tfm"
+        android:layout_alignStart="@+id/circle_tfm"
+        android:id="@+id/text_tfm" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:onClick="choixTv"
+        android:layout_width="80dp"
+        android:id="@+id/circle_sentv"
+        android:src="@mipmap/sentv"
+        app:civ_border_color="#FF234F"
+        app:civ_border_width="2dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="118dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="SenTv"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_below="@+id/circle_sentv"
+        android:layout_alignLeft="@+id/circle_sentv"
+        android:layout_alignStart="@+id/circle_sentv"
+        android:id="@+id/text_sentv" />
+
+    <TextView
+        android:text="Africa7"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_below="@+id/circle_africa"
+        android:layout_alignLeft="@+id/circle_africa"
+        android:layout_alignStart="@+id/circle_africa"
+        android:id="@+id/text_africa" />
+
+
+    <TextView
+        android:text="Africable"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_below="@+id/circle_africable"
+        android:layout_alignLeft="@+id/circle_africable"
+        android:layout_alignStart="@+id/circle_africable"
+        android:id="@+id/text_africable" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:onClick="choixTv"
+        android:layout_width="80dp"
+        android:id="@+id/circle_africa"
+        android:src="@mipmap/africa7"
+        app:civ_border_color="#FF234F"
+        app:civ_border_width="2dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/circle_sentv"
+        android:layout_alignLeft="@+id/circle_tv2"
+        android:layout_alignStart="@+id/circle_tv2" />
+
+
+    <TextView
+        android:text="Ortm"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_below="@+id/circle_ortm"
+        android:layout_alignLeft="@+id/circle_ortm"
+        android:layout_alignStart="@+id/circle_ortm"
+        android:id="@+id/text_ortm" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:onClick="choixTv"
+        android:layout_width="80dp"
+        android:id="@+id/circle_ortm"
+        android:src="@mipmap/ortm"
+        app:civ_border_color="#FF234F"
+        app:civ_border_width="2dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/text_sentv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:onClick="choixTv"
+        android:layout_width="80dp"
+        android:id="@+id/circle_fr24"
+        android:src="@mipmap/france24"
+        app:civ_border_color="#FF234F"
+        app:civ_border_width="2dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/text_fr24"
+        android:layout_alignLeft="@+id/circle_africa"
+        android:layout_alignStart="@+id/circle_africa" />
+
+    <TextView
+        android:text="France24"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_fr24"
+        android:layout_below="@+id/circle_ortm"
+        android:layout_alignRight="@+id/circle_fr24"
+        android:layout_alignEnd="@+id/circle_fr24" />
+
+
+    <TextView
+        android:text="Walf Tv"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_walf"
+        android:layout_below="@+id/circle_africa"
+        android:layout_alignRight="@+id/circle_walf"
+        android:layout_alignEnd="@+id/circle_walf" />
+
+
+    <TextView
+        android:text="Makkah Live"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_makkah"
+        android:layout_below="@+id/circle_makkah"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_alignRight="@+id/circle_makkah"
+        android:layout_alignEnd="@+id/circle_makkah" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:onClick="choixTv"
+        android:layout_width="80dp"
+        android:id="@+id/circle_makkah"
+        android:src="@mipmap/makkah"
+        app:civ_border_color="#FF234F"
+        app:civ_border_width="2dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/text_ortm"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:onClick="choixTv"
+        android:layout_width="80dp"
+        android:id="@+id/circle_medina"
+        android:src="@mipmap/medina"
+        app:civ_border_color="#FF234F"
+        app:civ_border_width="2dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/text_medina"
+        android:layout_alignLeft="@+id/circle_fr24"
+        android:layout_alignStart="@+id/circle_fr24" />
+
+    <TextView
+        android:text="Medina Live"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_medina"
+        android:layout_below="@+id/circle_makkah"
+        android:layout_alignRight="@+id/circle_medina"
+        android:layout_alignEnd="@+id/circle_medina" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:onClick="choixTv"
+        android:layout_width="80dp"
+        android:id="@+id/circle_walf"
+        android:src="@mipmap/walftv"
+        app:civ_border_color="#FF234F"
+        app:civ_border_width="2dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/circle_africa"
+        android:layout_alignRight="@+id/text_africable"
+        android:layout_alignEnd="@+id/text_africable" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:onClick="choixTv"
+        android:layout_width="80dp"
+        android:id="@+id/circle_africable"
+        android:src="@mipmap/africable"
+        app:civ_border_color="#FF234F"
+        app:civ_border_width="2dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/circle_fr24"
+        android:layout_alignLeft="@+id/circle_tfm"
+        android:layout_alignStart="@+id/circle_tfm" />
+
+    <TextView
+        android:text="Qur'ane Tv"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_quran"
+        android:layout_below="@+id/circle_quran"
+        android:layout_alignRight="@+id/circle_quran"
+        android:layout_alignEnd="@+id/circle_quran" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:onClick="choixTv"
+        android:layout_width="80dp"
+        android:id="@+id/circle_quran"
+        android:src="@mipmap/coran1"
+        app:civ_border_color="#FF234F"
+        app:civ_border_width="2dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/circle_medina"
+        android:layout_alignLeft="@+id/circle_africable"
+        android:layout_alignStart="@+id/circle_africable" />
+
+    <TextView
+        android:text="Thêatre"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_theatre"
+        android:layout_below="@+id/circle_theatre"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_alignRight="@+id/circle_theatre"
+        android:layout_alignEnd="@+id/circle_theatre" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:onClick="choixTv"
+        android:layout_width="80dp"
+        android:id="@+id/circle_theatre"
+        android:src="@mipmap/theatre"
+        app:civ_border_width="2dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/text_makkah"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:onClick="choixTv"
+        android:layout_width="80dp"
+        android:id="@+id/circle_aljajeera"
+        android:src="@mipmap/aljajeera"
+        app:civ_border_color="#FF234F"
+        app:civ_border_width="2dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/text_aljajeera"
+        android:layout_alignLeft="@+id/circle_medina"
+        android:layout_alignStart="@+id/circle_medina" />
+
+    <TextView
+        android:text="Al Jajeera"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_aljajeera"
+        android:layout_below="@+id/circle_theatre"
+        android:layout_alignRight="@+id/circle_aljajeera"
+        android:layout_alignEnd="@+id/circle_aljajeera" />
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:onClick="choixTv"
+        android:layout_width="80dp"
+        android:id="@+id/circle_arte"
+        android:src="@mipmap/arte"
+        app:civ_border_color="#FF234F"
+        app:civ_border_width="2dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/text_arte"
+        android:layout_alignLeft="@+id/circle_quran"
+        android:layout_alignStart="@+id/circle_quran" />
+
+    <TextView
+        android:text="Arte"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_arte"
+        android:layout_below="@+id/circle_aljajeera"
+        android:layout_alignRight="@+id/circle_arte"
+        android:layout_alignEnd="@+id/circle_arte"/>
+
+        </RelativeLayout>
+</ScrollView>
